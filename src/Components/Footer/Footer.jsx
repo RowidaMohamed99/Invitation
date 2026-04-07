@@ -26,7 +26,7 @@ return <>
 
         {/* Date */}
         <p className="text-[#c9a46c] font-semibold tracking-wide mb-10">
-        12 September 2026
+        16 April 2026
         </p>
 
         {/* Footer */}
