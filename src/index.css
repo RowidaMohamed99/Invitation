@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap');
+
+:root{
+  --font-script: "Great Vibes", cursive;
+  --font-serif: "Playfair Display", serif;
+}
+body{
+  font-family: "Merriweather", serif;
+  font-family: "Dancing Script", serif;
+} */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+@keyframes floatText {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.float-text {
+  animation: floatText 4s ease-in-out infinite;
+}
+
+
+.perspective {
+  perspective: 1000px;
+}
+
+.rotate-x-0 {
+  transform: rotateX(0deg);
+}
+
+.rotate-x-180 {
+  transform: rotateX(180deg);
+}
+
+@keyframes inviteFade {
+
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+.animate-invite{
+  animation: inviteFade 1.5s ease forwards;
+}
+
