@@ -43,6 +43,8 @@ return <>
         {/* Date */}
         <p className="text-gray-500 mb-4">
             16 April 2026
+            <br />
+            At 6:00 PM
         </p>
 
         <hr className="my-4" />

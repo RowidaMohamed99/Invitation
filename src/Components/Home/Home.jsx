@@ -94,12 +94,6 @@ useEffect(() => {
             className="w-full h-full object-cover md:object-contain rounded-xl shadow-lg overflow-hidden inset-0"
           />
 
-          {/* الحروف R&E */}
-          {/* <div className="absolute bottom-[38%] left-1/2 -translate-x-1/2
-          text-[22px] md:text-[26px] font-serif text-[#8a7b63]">
-            R & E
-          </div> */}
-
         </div>
       )}
 
@@ -127,7 +121,7 @@ useEffect(() => {
       WE'RE GETTING MARRIED
       </h1>
 
-      <h3 className={`text-5xl sm:text-6xl md:text-7xl text-white font-[Great_Vibes] float-text transition-all duration-1000 ease-in-out
+      <h3 className={`text-5xl sm:text-6xl md:text-7xl text-white font-[Great_Vibes] pt-10 float-text transition-all duration-1000 ease-in-out
       ${showText ? "opacity-100 translate-y-0 delay-400" : "opacity-0 translate-y-10"}`}>
       Eslam
       </h3>
@@ -141,24 +135,10 @@ useEffect(() => {
       ${showText ? "opacity-100 translate-y-0 delay-800" : "opacity-0 translate-y-10"}`}>
       Rowida
       </h3>
-
-      {/* <h1 className="text-white tracking-[6px] font-[Cinzel] font-bold mb-9">
-        WE'RE GETTING MARRIED
-      </h1>
-
-      <h3 className="text-5xl sm:text-6xl md:text-7xl text-white font-[Great_Vibes] float-text">
-          Eslam
-        </h3>
-
-        <span className="text-5xl sm:text-6xl md:text-7xl text-white font-[Great_Vibes] float-text">&</span>
-
-        <h3 className="text-5xl sm:text-6xl md:text-7xl text-white font-[Great_Vibes] mb-20 float-text">
-          Rowida
-        </h3> */}
-
-      <p className="text-white text-2xl font-[Playfair_Display] mt-0">
+      <p className="text-white text-2xl font-[Playfair_Display] mt-0 mb-0 pt-0">
         16 April 2026
       </p>
+      <h5 className="mt-0 pt-0 font-[Playfair_Display]">At 6:00 PM</h5>
 
       <p className="text-lg">
         La jolie Hall
@@ -168,12 +148,13 @@ useEffect(() => {
 
   <Countdown/>
   <Venue showVenue={showVenue } />
+  <Footer/>
   
       </>
   
 )}
     </div>
-    <Footer/>
+    
     </>
     
   ;

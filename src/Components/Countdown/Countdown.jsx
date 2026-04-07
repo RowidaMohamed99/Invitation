@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 export default function Countdown() {
-const weddingDate = new Date("2026-04-16T20:00:00");
+const weddingDate = new Date("2026-04-16T18:00:00");
 
 const calculateTimeLeft = () => {
     const now = new Date();
@@ -10,9 +10,10 @@ const calculateTimeLeft = () => {
     if (difference <= 0) return {};
 
     return {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / (1000 * 60)) % 60),
+    days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+    hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+    minutes: Math.floor((difference / (1000 * 60)) % 60),
+    seconds: Math.floor((difference / 1000) % 60),
     };
 };
 
@@ -56,13 +57,15 @@ return (
         UNTIL 16 APRIL 2026
         </p>
 
-        <div className="flex flex-wrap justify-center gap-6 md:gap-12">
+        <div className="flex flex-nowrap justify-center gap-2 md:gap-12">
 
         <TimeBox value={timeLeft.days} label="DAYS" />
         <Divider />
         <TimeBox value={timeLeft.hours} label="HOURS" />
         <Divider />
         <TimeBox value={timeLeft.minutes} label="MINUTES" />
+        <Divider />
+        <TimeBox value={timeLeft.seconds} label="SECONDS" />
 
         </div>
     </div>
