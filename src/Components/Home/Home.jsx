@@ -74,7 +74,7 @@ useEffect(() => {
     onClick={toggleMusic}
     className="fixed top-4 right-4 z-50  text-white px-3 py-2 rounded-full backdrop-blur-md shadow-lg"
   >
-    {isPlaying ? "🔇" : "🔊"}
+    {isPlaying ? "🔊" : "🔇" }
   </button>
 
     <div className="w-full min-h-screen bg-[#f4f1ea]">
